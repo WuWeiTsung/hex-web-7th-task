@@ -1,0 +1,378 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/******************/
+
+body {
+    font-family: 'Bruno Ace SC', cursive;
+    line-height: 1.5;
+    background: #000;
+}
+
+.h1 {
+    font-size: 128px;
+}
+
+.h2 {
+    font-size: 64px;
+}
+
+.h3 {
+    font-size: 24px;
+}
+
+.h4 {
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    color: #ffffff;
+    padding-top: 40px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .menu li {
+    width: 306px;
+}
+
+header .menu li:last-child {
+    width: 196px;
+    text-align: end;
+}
+
+/* banner */
+
+.banner {
+    padding: 72px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.banner h1 {
+    color: #00FFA3;
+    text-align: end;
+}
+
+.banner .contact {
+    display: block;
+    max-width: 138px;
+    padding: 12px 24px;
+    background: #ffffff;
+    color: #000;
+    border-radius: 32px;
+    margin-left: auto;
+}
+
+/* introduction */
+
+.introduction {
+    background-image: url(/images/background-img.png);
+    padding: 160px 0;
+    color: #ffffff;
+}
+
+.introduction .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduction .contain {
+    max-width: 526px;
+}
+
+.introduction .contain h2 {
+    margin-bottom: 36px;
+}
+
+.introduction .contain p {
+    margin-bottom: 32px;
+}
+
+.introduction .decoration {
+    width: 128px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduction .images {
+    width: 746px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* aboutMe */
+
+.aboutMe {
+    background: #ffffff;
+    padding: 160px 0;
+}
+
+.aboutMe .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutMe .cards {
+    max-width: 636px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aboutMe .card {
+    width: 42.7%;
+    margin-bottom: 24px;
+    padding: 16px;
+    border: 1px solid #E3E3E3;
+}
+
+.aboutMe .context {
+    max-width: 526px;
+}
+
+.aboutMe .context h2 {
+    margin-bottom: 36px;
+}
+
+/* contactMe */
+
+.contactMe {
+    padding: 96px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.contactMe .contact {
+    display: flex;
+    align-items: center;
+}
+
+.contactMe .contact h2 {
+    margin-right: 16px;
+}
+
+.contactMe .link img {
+    max-width: 162px;
+}
+
+.contactMe .link {
+    width: 40.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* myProjects */
+
+.myProjects {
+    padding: 160px 0;
+    background: #ffffff;
+}
+
+.myProjects h2 {
+    width: 746px;
+    margin-left: auto;
+    margin-bottom: 16px;
+}
+
+.myProjects .projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.myProjects .content {
+    width: 66%;
+}
+
+.myProjects .contentTop {
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.myProjects .context {
+    width: 74.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.myProjects .context .seeMore {
+    display: block;
+    width: 134px;
+    padding: 12px 24px;
+    background: #000;
+    border-radius: 32px;
+}
+
+.myProjects .contentBottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* footer */
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    color: #ffffff;
+}
